@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WindowsFormsUI</name>
+    </assembly>
+    <members>
+        <member name="T:WindowsForms.UI.ViewManagement.UISettingsWF">
+            <summary>
+            包含一组常用应用程序用户界面设置和操作。
+            </summary>
+        </member>
+        <member name="M:WindowsForms.UI.ViewManagement.UISettingsWF.#ctor">
+            <summary>
+            创建 UISettings 类的新默认实例。
+            </summary>
+        </member>
+        <member name="E:WindowsForms.UI.ViewManagement.UISettingsWF.AdvancedEffectsEnabledChanged">
+            <summary>
+            启用或禁用高级 UI 效果设置时发生。
+            </summary>
+        </member>
+        <member name="E:WindowsForms.UI.ViewManagement.UISettingsWF.ColorValuesChanged">
+            <summary>
+            当颜色值更改时发生。
+            </summary>
+        </member>
+        <member name="E:WindowsForms.UI.ViewManagement.UISettingsWF.TextScaleFactorChanged">
+            <summary>
+            当系统文本大小设置更改时发生。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.AdvancedEffectsEnabled">
+            <summary>
+            获取一个值，该值指示是否启用系统的透明效果设置。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.AnimationsEnabled">
+            <summary>
+            获取是否为用户界面启用动画。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.CaretBlinkRate">
+            <summary>
+            获取通过应用程序视图创建的新插入符号的闪烁速率。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.CaretBrowsingEnabled">
+            <summary>
+            获取插入符号是否可以用于浏览操作。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.CaretWidth">
+            <summary>
+            获取通过应用程序视图创建的新插入符号的宽度。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.CursorSize">
+            <summary>
+            获取通过应用程序视图创建的新光标的大小。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.DoubleClickTime">
+            <summary>
+            获取双击操作时两次单击之间的最长允许时间。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.HandPreference">
+            <summary>
+            获取通过应用程序视图创建的用户界面的方向首选项。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.MessageDuration">
+            <summary>
+            获取为应用程序视图显示消息的时间长度。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.MouseHoverTime">
+            <summary>
+            获取在引发悬停事件之前，鼠标指针可悬停在矩形上的时间。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.ScrollBarArrowSize">
+            <summary>
+            获取与应用程序视图关联的窗口的滚动条箭头的大小。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.ScrollBarSize">
+            <summary>
+            获取与应用程序视图关联的窗口的滚动条的大小。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.ScrollBarThumbBoxSize">
+            <summary>
+            获取与应用程序关联的窗口的滚动块的大小。
+            </summary>
+        </member>
+        <member name="P:WindowsForms.UI.ViewManagement.UISettingsWF.TextScaleFactor">
+            <summary>
+            获取系统文本大小设置的值。
+            </summary>
+        </member>
+        <member name="M:WindowsForms.UI.ViewManagement.UISettingsWF.GetColorValue(WindowsForms.UI.ViewManagement.UIColorTypeWF)">
+            <summary>
+            返回指定的颜色类型的颜色值。
+            </summary>
+            <param name="desiredColor">指定要获取值的颜色的类型的枚举值。</param>
+            <returns></returns>
+        </member>
+        <member name="M:WindowsForms.UI.ViewManagement.UISettingsWF.UIElementColor(WindowsForms.UI.ViewManagement.UIElementTypeWF)">
+            <summary>
+            获取用于特定用户界面元素类型（如按钮表面或窗口文本）的颜色。
+            </summary>
+            <param name="desiredElement">将获取颜色的元素类型。</param>
+            <returns></returns>
+        </member>
+        <member name="T:WindowsForms.UI.ViewManagement.UIColorTypeWF">
+            <summary>
+            定义指定已知系统颜色值的常数。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIColorTypeWF.Background">
+            <summary>
+            背景色。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIColorTypeWF.Foreground">
+            <summary>
+            前景色。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIColorTypeWF.AccentDark3">
+            <summary>
+            最深的强调色。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIColorTypeWF.AccentDark2">
+            <summary>
+            较深的强调色。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIColorTypeWF.AccentDark1">
+            <summary>
+            深的强调色。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIColorTypeWF.Accent">
+            <summary>
+            强调色。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIColorTypeWF.AccentLight1">
+            <summary>
+            浅的强调色。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIColorTypeWF.AccentLight2">
+            <summary>
+            较浅的强调色。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIColorTypeWF.AccentLight3">
+            <summary>
+            最浅的强调色。
+            </summary>
+        </member>
+        <member name="T:WindowsForms.UI.ViewManagement.UIElementTypeWF">
+            <summary>
+            定义用户界面的元素类型集。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.AccentColor">
+            <summary>
+            强调色。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.ActiveCaption">
+            <summary>
+            活动标题元素。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.Background">
+            <summary>
+            背景元素。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.ButtonFace">
+            <summary>
+            按钮表面元素。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.ButtonText">
+            <summary>
+            文本在按钮中的显示。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.CaptionText">
+            <summary>
+            标题显示的文本。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.GrayText">
+            <summary>
+            灰色文本。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.Highlight">
+            <summary>
+            突出显示的用户（UI）界面元素。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.HighlightText">
+            <summary>
+            突出显示的文本。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.Hotlight">
+            <summary>
+            突出显示的 UI 元素。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.InactiveCaption">
+            <summary>
+            非活动标题元素
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.InactiveCaptionText">
+            <summary>
+            文本在非活动标题元素中显示。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.NonTextHigh">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.NonTextLow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.NonTextMedium">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.NonTextMediumHigh">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.NonTextMediumLow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.OverlayOutsidePopup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.PageBackground">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.PopupBackground">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.TextContrastWithHigh">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.TextHigh">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.TextLow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.TextMedium">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.Window">
+            <summary>
+            窗口。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.UIElementTypeWF.WindowText">
+            <summary>
+            文本在窗口的 UI 修饰中显示。
+            </summary>
+        </member>
+        <member name="T:WindowsForms.UI.ViewManagement.HandPreferenceWF">
+            <summary>
+            定义应用程序视图显示的用户界面的方向首选项集。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.HandPreferenceWF.LeftHanded">
+            <summary>
+            首选布局适用于左定向用户。
+            </summary>
+        </member>
+        <member name="F:WindowsForms.UI.ViewManagement.HandPreferenceWF.RightHanded">
+            <summary>
+            首选布局适用于右定向用户。
+            </summary>
+        </member>
+    </members>
+</doc>
