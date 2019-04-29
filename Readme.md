@@ -18,7 +18,7 @@
     |4|`Windows.UI.ViewManagement.ViewManagementViewScalingContract.winmd`|`C:\Program Files (x86)\Windows Kits\10\References\10.0.17763.0\Windows.UI.ViewManagement.ViewManagementViewScalingContract\1.0.0.0\`|
 
 ## 使用:
-0. 本项目只适用 Windows 10
+0. 本项目只适用 Windows 10。可以编译项目或者下载 [本项目生成文件](https://github.com/View12138/WindowsFormsUI/releases)。
 1. 在你的 Winform 项目中创建 `Librarys` 文件夹并向其中添加本项目生成的以下文件:  
    - `System.Runtime.WindowsRuntime.dll`
    - `Windows.Foundation.FoundationContract.winmd`
